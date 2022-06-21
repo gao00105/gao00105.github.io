@@ -28,11 +28,15 @@ ul :nth-child(odd){
 
 a{
     color:blue;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: lightgrey;
-    border: 10px;
+    border: 1px solid red;
 }
 
 a:hover{
     background-color: yellow;
+}
+
+footer{
+    margin-top: 50px;
 }
