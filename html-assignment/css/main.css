@@ -1,0 +1,38 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+header,footer {
+    background-color: aqua;
+}
+
+header.site-title{
+    color: red;
+}
+
+img#my-image{
+    width: 300px;
+    height: 400px;
+    border: 10px;
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+li{
+    list-style: square;
+}
+
+ul :nth-child(odd){
+    background: grey;
+}
+
+a{
+    color:blue;
+    text-decoration: underline;
+    background-color: lightgrey;
+    border: 10px;
+}
+
+a:hover{
+    background-color: yellow;
+}
