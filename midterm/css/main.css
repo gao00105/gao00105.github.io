@@ -32,10 +32,13 @@ body {
     background-image: url("../image/lone-starfish-wide.jpg");
     background-position: 55% 55%;
     background-size: cover;
-    color: aliceblue;
     padding-top:100px;
     padding-bottom: 40px;
-    font-size: xx-large;
+}
+
+h1 {
+    color: aliceblue;
+    font-size:50px;
 }
 
 /* small image set up to be word wraped*/
