@@ -1,6 +1,7 @@
 /*header does not stay on top on page*/
 header{
     position: relative;
+    text-align: center;
 }
 /*the whole page background color*/
 html {
@@ -9,7 +10,6 @@ html {
 /*three navigations porsition*/
 nav {
     display: inline-block;
-    text-align: center;
     font-size:x-large;
     padding-left: 100px;
     padding-right: 100px;
@@ -27,10 +27,17 @@ body {
     margin-left: 100px;
     margin-right: 100px;
 }
-/*wide image set up*/
-#img-wide {
-    width: 100%;
+/*set wide image as header background image*/
+.header-image{
+    background-image: url("../image/lone-starfish-wide.jpg");
+    background-position: 55% 55%;
+    background-size: cover;
+    color: aliceblue;
+    padding-top:100px;
+    padding-bottom: 40px;
+    font-size: xx-large;
 }
+
 /* small image set up to be word wraped*/
 #img {
     height:200px;
@@ -78,7 +85,7 @@ label {
     text-decoration: none;
     margin:10px;
 }
-/*keep footer bottom left*/
+/*keep footer bottom*/
 footer {
     float: right;
 }
