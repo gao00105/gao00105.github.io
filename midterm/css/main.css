@@ -39,6 +39,7 @@ body {
 h1 {
     color: aliceblue;
     font-size:50px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* small image set up to be word wraped*/
@@ -52,7 +53,7 @@ h1 {
 }
 /*change main text font size and family*/
 main {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: medium;
     margin-left: 10px;
     margin-right: 10px;
