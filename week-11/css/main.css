@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.products {
+    background-color: aqua;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        width: 800px;
+    }
+
+    .products .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "p1 p1 p1"
+        "p2 p3 p4"
+        "p5 p5 p5";
+    }
+    
+    .products .wrapper >div:nth-child(1) {grid-area: p1;}
+    .products .wrapper >div:nth-child(2) {grid-area: p2;}
+    .products .wrapper >div:nth-child(3) {grid-area: p3;}
+    .products .wrapper >div:nth-child(4) {grid-area: p4;}
+    .products .wrapper >div:nth-child(5) {grid-area: p5;}
+    
+}
