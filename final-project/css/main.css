@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: gray;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
