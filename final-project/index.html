@@ -5,84 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Final</title>
 </head>
 <body>
     <header>
+        <a name="top"></a>
         <div class="wrapper">
-            <nav><img src="images/logo.png" alt="Three Star Media">Home</nav>
-            <nav>About Us</nav>
-            <nav>Services</nav>
-            <nav>Team</nav>
-            <nav>Contact</nav>
+            <img src="images/logo.png" alt="Three Star Media">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search" name="search">&#128269
+                  </form>
+            </nav>
         </div>
     </header>
     <main>
-        <article>
+        <article class="container wrapper" id="welcome">
             <img src="images/main-banner.jpg" alt="Main Banner">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id mollitia, repellendus soluta omnis fugit odit hic non unde ab perspiciatis doloribus incidunt aperiam quod est iste voluptatum? Harum, sed vero.</p>
-            <a href="#Contact">Connect with us</a>
+            <a href="#contact"><button class="play-button">Connect with us <i class="fa fa-play"></i></button></a>
         </article>
-        <article>
+        <article class="container wrapper" id="about-us">
+            <a name="about-us"></a>
             <img src="images/about-us.jpg" alt="About Us">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem libero beatae quibusdam iste veritatis recusandae voluptates error amet aperiam earum sint, illum, qui veniam iusto. Impedit consequatur quas quibusdam qui!</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem libero beatae quibusdam iste veritatis recusandae voluptates error amet aperiam earum sint, illum, qui veniam iusto. Impedit consequatur quas quibusdam qui!</p>
         </article>
-        <h2>Our Services</h2>
-        <article>
-            <img src="images/digital.jpg" alt="Digital Plans">
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit voluptates dolorem magni, itaque nobis repellat rem officiis eaque, amet debitis id possimus aperiam dicta fugit qui architecto vitae distinctio ut!</p>
-            <a href="#digital">Digital Plans</a>
-        </article>
-        <article>
-            <img src="images/marketing.jpg" alt="Marketing Plans">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi eveniet quae mollitia veritatis est vitae inventore totam perferendis perspiciatis. Quasi, architecto! Magnam, accusamus dolores? Ad, perspiciatis! Aut quasi quibusdam accusantium?</p>
-            <a href="#marketing">Marketing Plans</a>
-        </article>
-        <article>
-            <img src="images/video.jpg" alt="Video Plans">
-            <h3>Video Production</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis distinctio eaque odit ab quo dolorum velit eos quaerat iusto iure alias quae accusantium aliquid delectus eligendi recusandae, porro vel.</p>
-            <a href="#video">Video Plans</a>
-        </article>
-        <article>
-            <img src="images/web.jpg" alt="Web Plans">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque incidunt voluptatibus maxime, ad distinctio vel omnis neque quibusdam, repudiandae dolorem delectus, ab doloribus odit! Ratione doloribus dolor perspiciatis corporis architecto.</p>
-            <a href="#web">Web Plans</a>
-        </article>
-        <article>
-            <img src="images/print.jpg" alt="Print Plans">
-            <h3>Print</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, ipsam nesciunt. Necessitatibus voluptates minima accusamus perspiciatis iste atque distinctio deserunt, nam soluta sunt harum, modi explicabo laborum voluptatum ut recusandae.</p>
-            <a href="#print">Print Plans</a>
-        </article>
-        <article>
+        <div class="services">
+            <a name="services"></a>
+            <h2>Our Services</h2>
+            <article class="container">
+                <img src="images/digital.jpg" alt="Digital Plans">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit voluptates dolorem magni, itaque nobis repellat rem officiis eaque, amet debitis id possimus aperiam dicta fugit qui architecto vitae distinctio ut!</p>
+                <button class="play-button">Digital Plans <i class="fa fa-play"></i></button>
+            </article>
+            <article class="container">
+                <img src="images/marketing.jpg" alt="Marketing Plans">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi eveniet quae mollitia veritatis est vitae inventore totam perferendis perspiciatis. Quasi, architecto! Magnam, accusamus dolores? Ad, perspiciatis! Aut quasi quibusdam accusantium?</p>
+                <button class="play-button">Marketing Plans <i class="fa fa-play"></i></button>
+            </article>
+            <article class="container">
+                <img src="images/video.jpg" alt="Video Plans">
+                <h3>Video Production</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis distinctio eaque odit ab quo dolorum velit eos quaerat iusto iure alias quae accusantium aliquid delectus eligendi recusandae, porro vel.</p>
+                <button class="play-button">Video Plans <i class="fa fa-play"></i></button>
+            </article>
+            <article class="container">
+                <img src="images/web.jpg" alt="Web Plans">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque incidunt voluptatibus maxime, ad distinctio vel omnis neque quibusdam, repudiandae dolorem delectus, ab doloribus odit! Ratione doloribus dolor perspiciatis corporis architecto.</p>
+                <button class="play-button">Web Plans <i class="fa fa-play"></i></button>
+            </article>
+            <article class="container">
+                <img src="images/print.jpg" alt="Print Plans">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, ipsam nesciunt. Necessitatibus voluptates minima accusamus perspiciatis iste atque distinctio deserunt, nam soluta sunt harum, modi explicabo laborum voluptatum ut recusandae.</p>
+                <button class="play-button">Print Plans <i class="fa fa-play"></i></button>
+            </article>
+        </div>
+        <article class="container wrapper" id="vision">
+            <a name="vision"></a>
             <img src="images/vision.jpg" alt="Our Vision">
             <h3>Our Vision</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores ipsam unde ipsum facere dignissimos itaque iusto! Iure, fugit laboriosam illo nihil ipsum qui nostrum commodi dolore optio, amet quam?</p>
-            <a href="#more">Learn More</a>
+            <button class="play-button">Learn More <i class="fa fa-play"></i></button>
         </article>
-        <h2>Our Team</h2>
-        <article>
-            <img src="images/john.jpg" alt="John Doe">
-            <h3>John Doe</h3>
-            <h4>CEO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
-        </article>
-        <article>
-            <img src="images/bob.jpg" alt="Bob Rite">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
-        </article>
-        <article>
+        <div class="team">
+            <a name="team"></a>
+            <h2>Our Team</h2>
+            <article class="container">
+                <img src="images/john.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
+            </article>
+            <article class="container">
+                <img src="images/bob.jpg" alt="Bob Rite">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
+            </article>
+        </div>
+        <article class="container #Contact">
+            <a name="contact"></a>
             <h2>Contact Us</h2>
             <h3>Send us a message</h3>
             <form action="index.html" method="get">
@@ -95,11 +116,11 @@
                 <input type="submit" id="send" value="Send">
             </form>
         </article>
-        <article>
+        <article class="container">
             <h3>Location</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548426765!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1658941376666!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
-        <article>
+        <article class="container">
             <table>
                 <caption><h3>Hours of operation</h3></caption>
                 <thead>
@@ -120,10 +141,13 @@
                 </tbody>
             </table>
         </article>
+        <a href="#top" id="top">Back to Top</a>
     </main>
     <footer>
-        <p>&copy; Copyright Three Star Media, 2020</p>
-        <p>All images are taken from Unsplash</p>
+        <div class="wrapper">
+            <p>&copy; Copyright Three Star Media, 2020</p>
+            <p>All images are taken from <underline>Unsplash</underline></p>
+        </div>
     </footer>
 </body>
 </html>
