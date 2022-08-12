@@ -1,0 +1,152 @@
+.wrapper {
+    margin:0;
+    max-width: 1200px;
+    margin:10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+h4 {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/** Header - display logo and table of contents in vertical, search bar and icon in horizontal. Seperate logo and contents into 6 blocks and in 1 column.**/
+.stack {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.stack .block {
+    text-align: center;
+    text-decoration: none;
+    color: #c78c06;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+}
+
+.stack .block:hover {
+    background-color: #c78c06;
+    color:#222;
+}
+
+.stack .block:nth-child(1) {
+    text-align: left;
+    background-color: #c78c06;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+}
+
+#search #search-bar {
+    width: 95%;
+    height: 2rem;
+    font-size: 1.25rem;
+}
+
+#search #search-icon {
+    width: 5%;
+    height: 2.4rem;
+    background-color: #222;
+    color: #c78c06;
+    border:#c78c06 solid 2px;
+}
+
+#search #search-icon:hover {
+    background-color: #c78c06;
+    color:#222;
+}
+
+/** Title - For the second part of header, define a background image, a second transparent layer above the background with welcome info in it. Create a button link to contact section. **/
+
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 55%;
+    margin: 0;
+    padding: 200px 50px;
+    color: white
+}
+
+.banner .block{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 100px;
+}
+
+.banner button {
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: #c78c06;
+    color: #222;
+    border: none;
+}
+
+/** About Us - **/
+.about{
+    background-color: #ffe6ac;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/** Our Services**/
+.cards {
+    background-color: #ffe6ac;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.cards button {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.grid-system {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "card1 card1 card1 card2 card2 card2"
+    "card3 card3 card4 card4 card5 card5"
+}
+.grid-system > .cards:nth-child(1) {grid-area: card1;}
+.grid-system > .cards:nth-child(2) {grid-area: card2;}
+.grid-system > .cards:nth-child(3) {grid-area: card3;}
+.grid-system > .cards:nth-child(4) {grid-area: card4;}
+.grid-system > .cards:nth-child(5) {grid-area: card5;}
