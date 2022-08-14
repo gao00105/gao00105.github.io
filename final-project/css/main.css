@@ -26,13 +26,21 @@ h3 {
 }
 
 h4 {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 1rem;
+    padding-bottom: 0.2rem;
+    border-bottom: #c78c06 solid 2px;
 }
 
 p {
     font-size: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
 }
 
 /** Header - display logo and table of contents in vertical, search bar and icon in horizontal. Seperate logo and contents into 6 blocks and in 1 column.**/
@@ -43,7 +51,7 @@ p {
     padding: 1rem;
     font-weight: bold;
 }
-
+/** Header: navigation - Display home, about us, services, team and contact vertically with flexbox. And add hover to each navigation.**/
 .stack .block {
     text-align: center;
     text-decoration: none;
@@ -51,28 +59,28 @@ p {
     font-size: 1.25rem;
     padding: 1.25rem;
 }
-
+/** Header: navigation:hover **/
 .stack .block:hover {
     background-color: #c78c06;
     color:#222;
 }
-
+/** Header: logo**/
 .stack .block:nth-child(1) {
     text-align: left;
     background-color: #c78c06;
 }
-
+/** Header: search - display search bar and search icon in one line, and make search icon hoverable(none operable)**/
 #search {
     display: flex;
     flex-direction: row;
 }
-
+/** Header: search bar**/
 #search #search-bar {
     width: 95%;
     height: 2rem;
     font-size: 1.25rem;
 }
-
+/** Header: search icon**/
 #search #search-icon {
     width: 5%;
     height: 2.4rem;
@@ -80,14 +88,14 @@ p {
     color: #c78c06;
     border:#c78c06 solid 2px;
 }
-
+/** Header: search icon:hover**/
 #search #search-icon:hover {
     background-color: #c78c06;
     color:#222;
 }
 
 /** Title - For the second part of header, define a background image, a second transparent layer above the background with welcome info in it. Create a button link to contact section. **/
-
+/** Title: background image**/
 .banner {
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
@@ -97,12 +105,12 @@ p {
     padding: 200px 50px;
     color: white
 }
-
+/**Title: trasparent layer**/
 .banner .block{
     background: rgba(0, 0, 0, 0.4);
     padding: 100px;
 }
-
+/** Title: connect with us**/
 .banner button {
     padding: 2rem;
     font-size: 1.5rem;
@@ -111,20 +119,18 @@ p {
     border: none;
 }
 
-/** About Us - **/
+/** About Us - set the first layer as background color and for the second layer display picture and text flex with direction column**/
 .about{
     background-color: #ffe6ac;
     padding: 50px;
-    display: flex;
-    flex-direction: column;
 }
 
-/** Our Services**/
+/** Our Services - Display five plan cards in grid**/
 .cards {
     background-color: #ffe6ac;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .cards button {
@@ -145,8 +151,40 @@ p {
     "card1 card1 card1 card2 card2 card2"
     "card3 card3 card4 card4 card5 card5"
 }
+
 .grid-system > .cards:nth-child(1) {grid-area: card1;}
 .grid-system > .cards:nth-child(2) {grid-area: card2;}
 .grid-system > .cards:nth-child(3) {grid-area: card3;}
 .grid-system > .cards:nth-child(4) {grid-area: card4;}
 .grid-system > .cards:nth-child(5) {grid-area: card5;}
+
+/** Vision - Set vision.jpg as background image same as banner. **/
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 55%;
+    margin: 0;
+    padding: 50px 50px;
+}
+
+.vision .block {
+    color: white;
+    margin: 0 1rem;
+}
+
+.vision button {
+    background-color: #222;
+    border: gray solid 1px;
+    color: white;
+    padding: 40px 30px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/** Team - display two team members with flexbox, and for display each team member info with flexbox. **/
+.member {
+    background-color: #ffe6ac;
+    margin: 0.5rem;
+}
