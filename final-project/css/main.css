@@ -230,7 +230,7 @@ th, td {
     padding-left: 10px;
     font-weight: bold;
 }
-
+/** Giving background color #ffe6ac to days and hours cells**/
 thead {
     background-color: #ffe6ac;
 }
@@ -299,7 +299,7 @@ footer {
     .contact .grid-system {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 15% 50%  10% 50%;
+        grid-template-rows: 15% 50%  5% 50%;
         grid-template-areas:
         "area1 area1"
         "area2 area3"
