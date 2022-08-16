@@ -36,15 +36,19 @@
         <main class="wrapper">
             <section class="about flexbox">
                 <a name="about-us"></a>
-                        <img src="images/about-us.jpg" alt="About Us" id="about-us-img">
+                    <div>
+                        <img src="images/about-us.jpg" alt="About Us">
+                    </div>
+                    <div>
                         <h2>About Us</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem libero beatae quibusdam iste veritatis recusandae voluptates error amet aperiam earum sint, illum, qui veniam iusto. Impedit consequatur quas quibusdam qui!</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem libero beatae quibusdam iste veritatis recusandae voluptates error amet aperiam earum sint, illum, qui veniam iusto. Impedit consequatur quas quibusdam qui!</p>
+                    </div>         
             </section>
-            <section class="wrapper">
+            <section class="wrapper services">
                 <a name="services"></a>
                 <h2>Our Services</h2>
-                <div class="services grid-system">
+                <div class="grid-system">
                     <section class="cards">
                         <img src="images/digital.jpg" alt="Digital Plans">
                         <h3>Digital Transformation</h3>
@@ -76,7 +80,7 @@
                         <button class="play-button">Print Plans &nbsp<i class="fa fa-play"></i></button>
                     </section>
                 </div>
-                <section class="wrapper vision flexbox">
+                <section class="vision">
                     <a name="vision"></a>
                     <div class="block">
                         <h3>Our Vision</h3>
@@ -84,64 +88,69 @@
                         <button class="play-button">Learn More &nbsp<i class="fa fa-play"></i></button>
                     </div>
                 </section>
-                <div class="wrapper flexbox">
+                <div class="team">
                     <a name="team"></a>
                     <h2>Our Team</h2>
-                    <section class="member flexbox">
-                        <img src="images/john.jpg" alt="John Doe">
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
-                    </section>
-                    <section class="member flexbox">
-                        <img src="images/bob.jpg" alt="Bob Rite">
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
+                    <section class="grid-system">
+                            <div class="block">
+                                <img src="images/john.jpg" alt="John Doe">
+                            </div>
+                            <div class="block">
+                                <h3>John Doe</h3>
+                                <h4>CEO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
+                            </div>
+                            <div class="block"><img src="images/bob.jpg" alt="Bob Rite"></div>
+                            <div class="block">
+                                <h3>Bob Rite</h3>
+                                <h4>CFO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, unde velit provident cum nisi inventore modi itaque possimus facilis facere cumque quaerat accusantium. Delectus dignissimos velit, officia eius numquam perspiciatis.</p>
+                            </div>
                     </section>
                 </div>
-                <div class="wrapper">
+                <div class="contact">
                     <a name="contact"></a>
-                    <h2>Contact Us</h2>
-                    <section class="user-info">
-                        <h3>Send us a message</h3>
-                        <form action="index.html" method="get">
-                            <label for="name">Full Name</label><br>
-                            <input type="text" id="name" name="name"><br>
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email"><br>
-                            <label for="message">Message</label><br>
-                            <input type="text" id="message" name="message"><br>
-                            <input type="submit" id="send" value="Send">
-                        </form>
-                    </section>
-                    <section class="location">
-                        <h3>Location</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548426765!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1658941376666!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </section>
-                    <section class="hours">
-                        <table>
-                            <caption><h3>Hours of operation</h3></caption>
-                            <thead>
-                                <tr>
-                                    <th>Days</th>
-                                    <th>Hours</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Monday - Friday</td>
-                                    <td>9 AM - 6 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday - Sunday</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section> 
+                    <div class="grid-system">
+                        <h2>Contact Us</h2>
+                        <section class="user-info flexbox">
+                            <h3>Send us a message</h3>
+                            <form action="index.html" method="get">
+                                <label for="name" class="block">Full Name</label>
+                                <input type="text" id="name" name="name" class="block">
+                                <label for="email" class="block">Email</label>
+                                <input type="email" id="email" name="email" class="block">
+                                <label for="message" class="block">Message</label>
+                                <input type="text" id="message" name="message" class="block">
+                                <input type="submit" id="send" value="Send" class="block">
+                            </form>
+                        </section>
+                        <section class="hours flexbox">
+                            <table>
+                                <caption><h3>Hours of operation</h3></caption>
+                                <thead>
+                                    <tr>
+                                        <th>Days</th>
+                                        <th>Hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday - Friday</td>
+                                        <td>9 AM - 6 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday - Sunday</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <section class="location flexbox">
+                            <h3>Location</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548426765!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1658941376666!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+                    </div>  
                 </div>
-                <a href="#top" id="back-to-top">Back to Top</a>
             </section>
         </main>
         <footer class="wrapper">
